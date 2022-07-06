@@ -165,8 +165,8 @@ DiscordLib:Notification("Hoşgeldin!", "Hoşgeldin "..game:GetService("Players")
 btns:Button(
     "İsmini Sil",
     function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/NemsploitsTM/zort/main/rname'))()
-        DiscordLib:Notification("Bildirim", "İsmin silindi!", "Tamam")
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/NemsploitsTM/zort/main/rname",true))()
+      DiscordLib:Notification("Bildirim", "İsmin silindi!", "Tamam")
     end
 )
 
@@ -175,7 +175,7 @@ btns:Button(
 btns:Button(
     "Onur Puanı Al",
     function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/NemsploitsTM/zort/main/op'))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NemsploitsTM/zort/main/op",true))()
         DiscordLib:Notification("Bildirim", "Onur Puanı verildi!", "Tamam")
     end
 )
