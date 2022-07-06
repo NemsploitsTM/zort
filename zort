@@ -152,30 +152,499 @@ s::::::::::::::s k::::::k  k:::::k  i::::::i d:::::::::::::::::d
   sssssssssss    kkkkkkkk    kkkkkkkiiiiiiii   ddddddddd   ddddd
 ]]
 
-local DiscordLib = loadstring(game:HttpGet "https://pastebinp.com/raw/pjQ6yNJK")()
+local tafucker = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local name = Instance.new("TextLabel")
+local wswcr = Instance.new("TextLabel")
+local scriptlist = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local main_2 = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local honour = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
+local name_2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local raider = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local killall = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local loader = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local SName = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local loadingtext = Instance.new("TextLabel")
+local wswcr_2 = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local Bar = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
 
-local win = DiscordLib:Window("TA Fucker")
+--Properties:
 
-local serv = win:Server("TA Götten :)", "")
+tafucker.Name = "tafucker"
+tafucker.Parent = game.CoreGui
+tafucker.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-local btns = serv:Channel("Main")
+main.Name = "main"
+main.Parent = tafucker
+main.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+main.BorderSizePixel = 0
+main.Position = UDim2.new(0.346446693, 0, 0.213861421, 0)
+main.Size = UDim2.new(0, 242, 0, 289)
+main.Visible = false
 
-DiscordLib:Notification("Hoşgeldin!", "Hoşgeldin "..game:GetService("Players").LocalPlayer.Name.."!\n\nBu script daha bitmedi yani yeni güncellemeler gelicek.", "Tamam")
+UICorner.CornerRadius = UDim.new(0, 5)
+UICorner.Parent = main
 
-btns:Button(
-    "İsmini Sil",
-    function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/NemsploitsTM/zort/main/rname",true))()
-      DiscordLib:Notification("Bildirim", "İsmin silindi!", "Tamam")
-    end
-)
+name.Name = "name"
+name.Parent = main
+name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+name.BackgroundTransparency = 1.000
+name.BorderSizePixel = 0
+name.Size = UDim2.new(0, 242, 0, 29)
+name.Font = Enum.Font.Cartoon
+name.Text = "TA Fucker | V2"
+name.TextColor3 = Color3.fromRGB(230, 230, 230)
+name.TextSize = 14.000
 
--- btns:Seperator() -- adds a seperator between two buttons
+wswcr.Name = "wswcr"
+wswcr.Parent = main
+wswcr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+wswcr.BackgroundTransparency = 1.000
+wswcr.BorderSizePixel = 0
+wswcr.Position = UDim2.new(0, 0, 0.937822521, 0)
+wswcr.Size = UDim2.new(0, 242, 0, 17)
+wswcr.Font = Enum.Font.Arial
+wswcr.Text = "Wxer Softworks | 2022 ©"
+wswcr.TextColor3 = Color3.fromRGB(121, 121, 121)
+wswcr.TextSize = 11.000
 
-btns:Button(
-    "Onur Puanı Al",
-    function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/NemsploitsTM/zort/main/op",true))()
-        DiscordLib:Notification("Bildirim", "Onur Puanı verildi!", "Tamam")
-    end
-)
+scriptlist.Name = "scriptlist"
+scriptlist.Parent = main
+scriptlist.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+scriptlist.BorderSizePixel = 0
+scriptlist.Position = UDim2.new(0.0117359003, 0, 0.100346021, 0)
+scriptlist.Size = UDim2.new(0, 235, 0, 235)
+
+UICorner_2.CornerRadius = UDim.new(0, 5)
+UICorner_2.Parent = scriptlist
+
+main_2.Name = "main"
+main_2.Parent = scriptlist
+main_2.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+main_2.BorderSizePixel = 0
+main_2.Position = UDim2.new(0.0585444048, 0, 0.0271126609, 0)
+main_2.Size = UDim2.new(0, 207, 0, 221)
+
+UICorner_3.CornerRadius = UDim.new(0, 5)
+UICorner_3.Parent = main_2
+
+honour.Name = "honour"
+honour.Parent = main_2
+honour.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+honour.BackgroundTransparency = 0.250
+honour.BorderSizePixel = 0
+honour.Position = UDim2.new(0.200323388, 0, 0.0596220344, 0)
+honour.Size = UDim2.new(0, 124, 0, 40)
+honour.Font = Enum.Font.Code
+honour.Text = "Get Honour Points"
+honour.TextColor3 = Color3.fromRGB(255, 255, 255)
+honour.TextSize = 14.000
+
+UICorner_4.CornerRadius = UDim.new(0, 7)
+UICorner_4.Parent = honour
+
+UIListLayout.Parent = main_2
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 4)
+
+name_2.Name = "name"
+name_2.Parent = main_2
+name_2.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+name_2.BackgroundTransparency = 0.250
+name_2.BorderSizePixel = 0
+name_2.Position = UDim2.new(0.200323388, 0, 0.0596220344, 0)
+name_2.Size = UDim2.new(0, 124, 0, 40)
+name_2.Font = Enum.Font.Code
+name_2.Text = "Hide Your Name"
+name_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+name_2.TextSize = 14.000
+
+UICorner_5.CornerRadius = UDim.new(0, 7)
+UICorner_5.Parent = name_2
+
+raider.Name = "raider"
+raider.Parent = main_2
+raider.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+raider.BackgroundTransparency = 0.250
+raider.BorderSizePixel = 0
+raider.Position = UDim2.new(0.200323388, 0, 0.0596220344, 0)
+raider.Size = UDim2.new(0, 124, 0, 40)
+raider.Font = Enum.Font.Code
+raider.Text = "Join Raider Team"
+raider.TextColor3 = Color3.fromRGB(255, 255, 255)
+raider.TextSize = 12.000
+
+UICorner_6.CornerRadius = UDim.new(0, 7)
+UICorner_6.Parent = raider
+
+killall.Name = "killall"
+killall.Parent = main_2
+killall.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+killall.BackgroundTransparency = 0.250
+killall.BorderSizePixel = 0
+killall.Position = UDim2.new(0.200323388, 0, 0.0596220344, 0)
+killall.Size = UDim2.new(0, 124, 0, 40)
+killall.Font = Enum.Font.Code
+killall.Text = "Kill All"
+killall.TextColor3 = Color3.fromRGB(255, 255, 255)
+killall.TextSize = 16.000
+
+UICorner_7.CornerRadius = UDim.new(0, 7)
+UICorner_7.Parent = killall
+
+loader.Name = "loader"
+loader.Parent = tafucker
+loader.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+loader.BorderSizePixel = 0
+loader.Position = UDim2.new(0.258883238, 0, 0.400000006, 0)
+loader.Size = UDim2.new(0, 380, 0, 182)
+
+UICorner_8.CornerRadius = UDim.new(0, 6)
+UICorner_8.Parent = loader
+
+SName.Name = "SName"
+SName.Parent = loader
+SName.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SName.BackgroundTransparency = 0.750
+SName.BorderSizePixel = 0
+SName.Size = UDim2.new(0, 380, 0, 30)
+SName.Font = Enum.Font.Ubuntu
+SName.Text = "TA Fucker | V2"
+SName.TextColor3 = Color3.fromRGB(230, 230, 230)
+SName.TextSize = 16.000
+
+UICorner_9.CornerRadius = UDim.new(0, 4)
+UICorner_9.Parent = SName
+
+loadingtext.Name = "loadingtext"
+loadingtext.Parent = loader
+loadingtext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loadingtext.BackgroundTransparency = 1.000
+loadingtext.BorderSizePixel = 0
+loadingtext.Position = UDim2.new(0, 0, 0.367639899, 0)
+loadingtext.Size = UDim2.new(0, 380, 0, 50)
+loadingtext.Font = Enum.Font.SciFi
+loadingtext.Text = "Loading..."
+loadingtext.TextColor3 = Color3.fromRGB(166, 166, 166)
+loadingtext.TextSize = 14.000
+
+wswcr_2.Name = "wswcr"
+wswcr_2.Parent = loader
+wswcr_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+wswcr_2.BackgroundTransparency = 1.000
+wswcr_2.BorderSizePixel = 0
+wswcr_2.Position = UDim2.new(0, 0, 0.915422857, 0)
+wswcr_2.Size = UDim2.new(0, 380, 0, 17)
+wswcr_2.Font = Enum.Font.Arial
+wswcr_2.Text = "Wxer Softworks | 2022 ©"
+wswcr_2.TextColor3 = Color3.fromRGB(121, 121, 121)
+wswcr_2.TextSize = 11.000
+
+Frame.Parent = loader
+Frame.BackgroundColor3 = Color3.fromRGB(217, 217, 217)
+Frame.Position = UDim2.new(0.0213248804, 0, 0.63837409, 0)
+Frame.Size = UDim2.new(0, 364, 0, 30)
+
+UICorner_10.CornerRadius = UDim.new(0, 50)
+UICorner_10.Parent = Frame
+
+Bar.Name = "Bar"
+Bar.Parent = Frame
+Bar.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+Bar.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Bar.Position = UDim2.new(-0.00263514835, 0, -0.00912068691, 0)
+Bar.Size = UDim2.new(0, 5, 0, 30)
+
+UICorner_11.CornerRadius = UDim.new(0, 50)
+UICorner_11.Parent = Bar
+
+-- Scripts:
+
+local function NRGPJD_fake_script() -- honour.LocalScript 
+	local script = Instance.new('LocalScript', honour)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/NemsploitsTM/zort/main/op'))()
+	end)
+end
+coroutine.wrap(NRGPJD_fake_script)()
+local function KPDC_fake_script() -- name_2.LocalScript 
+	local script = Instance.new('LocalScript', name_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/NemsploitsTM/zort/main/rname'))()
+	end)
+end
+coroutine.wrap(KPDC_fake_script)()
+local function VRDOGPZ_fake_script() -- raider.LocalScript 
+	local script = Instance.new('LocalScript', raider)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/NemsploitsTM/zort/main/isyan'))()
+	end)
+end
+coroutine.wrap(VRDOGPZ_fake_script)()
+local function VZKPMMZ_fake_script() -- killall.LocalScript 
+	local script = Instance.new('LocalScript', killall)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/NemsploitsTM/zort/main/kill'))()
+	end)
+end
+coroutine.wrap(VZKPMMZ_fake_script)()
+local function RZKRN_fake_script() -- main.Dragify 
+	local script = Instance.new('LocalScript', main)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(RZKRN_fake_script)()
+local function OTOB_fake_script() -- loader.LocalScript 
+	local script = Instance.new('LocalScript', loader)
+
+	local function text1(Text)
+		for i = 1, #Text, 1 do
+			script.Parent["SName"].Text = string.sub(Text, 1, i)
+			wait(0.03)
+		end
+	end
+	
+	local function text2(Text)
+		for i = 1, #Text, 1 do
+			script.Parent.wswcr.Text = string.sub(Text, 1, i)
+			wait(0.03)
+		end
+	end
+	
+	text1("TA Fucker | V2")
+	text2("Wxer Softworks | 2022 ©")
+end
+coroutine.wrap(OTOB_fake_script)()
+local function MCWDADV_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local bir = script.Parent.Bar
+	local iki = script.Parent.Parent.loadingtext
+	local wxerloader = script.Parent.Parent.Parent.loader
+	local waitwsw = 0.35
+	
+	local function text(Text)
+		for i = 1, #Text, 1 do
+			script.Parent.Parent.loadingtext.Text = string.sub(Text, 1, i)
+			wait(0.03)
+		end
+	end
+	
+	bir:TweenSize(
+		UDim2.new(0, 31,0, 30),
+		'Out',
+		'Sine',
+		'1'
+	)
+	
+	iki.Text = "Loading."
+	wait(waitwsw)
+	iki.Text = "Loading.."
+	wait(waitwsw)
+	iki.Text = "Loading..."
+	wait(waitwsw)
+	
+	bir:TweenSize(
+		UDim2.new(0, 62,0, 30),
+		'Out',
+		'Sine',
+		'1'
+	)
+	
+	iki.Text = "Loading."
+	wait(waitwsw)
+	iki.Text = "Loading.."
+	wait(waitwsw)
+	iki.Text = "Loading..."
+	wait(waitwsw)
+	
+	bir:TweenSize(
+		UDim2.new(0, 69,0, 30),
+		'Out',
+		'Sine',
+		'1'
+	)
+	
+	iki.Text = "Loading."
+	wait(waitwsw)
+	iki.Text = "Loading.."
+	wait(waitwsw)
+	iki.Text = "Loading..."
+	wait(waitwsw)
+	
+	bir:TweenSize(
+		UDim2.new(0, 93,0, 30),
+		'Out',
+		'Sine',
+		'1'
+	)
+	
+	iki.Text = "Loading."
+	wait(waitwsw)
+	iki.Text = "Loading.."
+	wait(waitwsw)
+	iki.Text = "Loading..."
+	wait(waitwsw)
+	
+	bir:TweenSize(
+		UDim2.new(0, 124,0, 30),
+		'Out',
+		'Sine',
+		'1'
+	)
+	
+	iki.Text = "Loading."
+	wait(waitwsw)
+	iki.Text = "Loading.."
+	wait(waitwsw)
+	iki.Text = "Loading..."
+	wait(waitwsw)
+	
+	bir:TweenSize(
+		UDim2.new(0, 155,0, 30),
+		'Out',
+		'Sine',
+		'1'
+	)
+	
+	iki.Text = "Loading."
+	wait(waitwsw)
+	iki.Text = "Loading.."
+	wait(waitwsw)
+	iki.Text = "Loading..."
+	wait(waitwsw)
+	
+	bir:TweenSize(
+		UDim2.new(0, 250,0, 30),
+		'Out',
+		'Sine',
+		'1'
+	)
+	
+	iki.Text = "Loading."
+	wait(waitwsw)
+	iki.Text = "Loading.."
+	wait(waitwsw)
+	iki.Text = "Loading..."
+	wait(waitwsw)
+	
+	bir:TweenSize(
+		UDim2.new(0, 300,0, 30),
+		'Out',
+		'Sine',
+		'1'
+	)
+	
+	iki.Text = "Loading."
+	wait(waitwsw)
+	iki.Text = "Loading.."
+	wait(waitwsw)
+	iki.Text = "Loading..."
+	wait(waitwsw)
+	
+	bir:TweenSize(
+		UDim2.new(0, 365,0, 30),
+		'Out',
+		'Sine',
+		'1'
+	)
+	
+	wait(1)
+	
+	text("Loaded.")
+	
+	wait(3)
+	
+	wxerloader:TweenSize(
+		UDim2.new(0, 0,0, 0),
+		'In',
+		'Sine',
+		'1'
+	)
+	
+	wxerloader.Visible = false
+	script.Parent.Parent.Parent.main.Visible = true
+end
+coroutine.wrap(MCWDADV_fake_script)()
+local function VVGD_fake_script() -- Bar.Script 
+	local script = Instance.new('Script', Bar)
+
+	local thing = script.Parent
+	local uiGradient = thing:WaitForChild("UIGradient")
+	local tweenService = game:GetService("TweenService")
+	
+	while true do
+		local tween = tweenService:Create(uiGradient, TweenInfo.new(2, Enum.EasingStyle.Linear), {Offset = Vector2.new(-1, 0)})
+		tween:Play()
+		wait(2)
+		uiGradient.Offset = Vector2.new(1, 0)
+		local tween2 = tweenService:Create(uiGradient, TweenInfo.new(2, Enum.EasingStyle.Linear), {Offset = Vector2.new(0, 0)})
+		tween2:Play()
+		wait(2)
+	end
+end
+coroutine.wrap(VVGD_fake_script)()
+local function TFMKTCB_fake_script() -- tafucker.antikick 
+	local script = Instance.new('LocalScript', tafucker)
+
+	getgenv().rejoin = game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(child)
+		if child.Name == 'ErrorPrompt' and child:FindFirstChild('MessageArea') and child.MessageArea:FindFirstChild("ErrorFrame") then
+			game:GetService("TeleportService"):Teleport(game.PlaceId)
+		end
+	end)
+end
+coroutine.wrap(TFMKTCB_fake_script)()
